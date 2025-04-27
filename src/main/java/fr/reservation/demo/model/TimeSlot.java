@@ -44,6 +44,70 @@ public class TimeSlot {
 
     @Column(name = "reserved_count", nullable = false)
     private int reservedCount = 0;
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setDeliveryDate(LocalDate deliveryDate) {
+        this.deliveryDate = deliveryDate;
+    }
+
+    public void setStartTime(LocalTime startTime) {
+        this.startTime = startTime;
+    }
+
+    public void setEndTime(LocalTime endTime) {
+        this.endTime = endTime;
+    }
+
+    public void setDeliveryMode(DeliveryMode deliveryMode) {
+        this.deliveryMode = deliveryMode;
+    }
+
+    public void setAvailable(boolean available) {
+        this.available = available;
+    }
+
+    public void setMaxCapacity(int maxCapacity) {
+        this.maxCapacity = maxCapacity;
+    }
+
+    public void setReservedCount(int reservedCount) {
+        this.reservedCount = reservedCount;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public LocalDate getDeliveryDate() {
+        return deliveryDate;
+    }
+
+    public LocalTime getStartTime() {
+        return startTime;
+    }
+
+    public LocalTime getEndTime() {
+        return endTime;
+    }
+
+    public DeliveryMode getDeliveryMode() {
+        return deliveryMode;
+    }
+
+    public boolean isAvailable() {
+        return available;
+    }
+
+    public int getMaxCapacity() {
+        return maxCapacity;
+    }
+
+    public int getReservedCount() {
+        return reservedCount;
+    }
 }
 
     
